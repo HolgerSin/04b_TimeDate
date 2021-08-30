@@ -14,69 +14,69 @@ public class App {
 		ausgabe("---------- Datum / Ausgaben --------------------");
 		
 		// aktuelle Datum
-		// LocalDate today = LocalDate.now();
-		// ausgabe("Heutiges Datum: " + today);
+		LocalDate today = LocalDate.now();
+		ausgabe("Heutiges Datum: " + today);
 		
 		// // bestimmtes Datum
-		// LocalDate givenDate = LocalDate.of(2012, Month.SEPTEMBER, 21);
-		// ausgabe("Bestimmtes Datum: " + givenDate);
+		LocalDate givenDate = LocalDate.of(2012, Month.SEPTEMBER, 21);
+		ausgabe("Bestimmtes Datum: " + givenDate);
 		
 		// // nächste Woche
-		// LocalDate aWeekFromToday = today.plusWeeks(1);
-		// ausgabe("Datum in einer Woche: " + aWeekFromToday);
+		LocalDate aWeekFromToday = today.plusWeeks(1);
+		ausgabe("Datum in einer Woche: " + aWeekFromToday);
 		
 		// // gestern
-		// LocalDate yesterday = today.minusDays(1);
-		// ausgabe("Gestern: " + yesterday);		
+		LocalDate yesterday = today.minusDays(1);
+		ausgabe("Gestern: " + yesterday);		
 	
 		
-		// ausgabe("---------- Vergleiche --------------------");
+		ausgabe("---------- Vergleiche --------------------");
 		
-		// ausgabe("Schaltjahr?: " + givenDate.isLeapYear() );
-		// ausgabe("Heute/Gestern: " + today.isAfter(yesterday) );
-		// ausgabe("Gestern/Heute: " + yesterday.isBefore(today));
-		// ausgabe("heute/heute: " + today.isEqual(today));
+		ausgabe("Schaltjahr?: " + givenDate.isLeapYear() );
+		ausgabe("Heute/Gestern: " + today.isAfter(yesterday) );
+		ausgabe("Gestern/Heute: " + yesterday.isBefore(today));
+		ausgabe("heute/heute: " + today.isEqual(today));
 		
 
-		// ausgabe("---------- Extraktion --------------------");
+		ausgabe("---------- Extraktion --------------------");
 	
-		// int year = today.getYear();
-		// ausgabe("aktuelles Jahr: " + year );
+		int year = today.getYear();
+		ausgabe("aktuelles Jahr: " + year );
 		
-		// givenDate = LocalDate.of(2020, Month.OCTOBER, 9);		
-		// String weekday = givenDate.getDayOfWeek().name();
-		// ausgabe("Wochentag: " + weekday );
-		// ausgabe("Thank God it's " + weekday );
-		// ausgabe("Tag im Monat: " + today.getDayOfMonth());
+		givenDate = LocalDate.of(2020, Month.OCTOBER, 9);		
+		String weekday = givenDate.getDayOfWeek().name();
+		ausgabe("Wochentag: " + weekday );
+		ausgabe("Thank God it's " + weekday );
+		ausgabe("Tag im Monat: " + today.getDayOfMonth());
 		
-		// ausgabe("---------- Zeit / Ausgaben --------------------");
+		ausgabe("---------- Zeit / Ausgaben --------------------");
 		
-		// LocalTime justNow = LocalTime.now();
-		// ausgabe("Jetzt: " + justNow );
+		LocalTime justNow = LocalTime.now();
+		ausgabe("Jetzt: " + justNow );
 		
-		// LocalTime newTime = LocalTime.of(12, 00);
-		// ausgabe("Mittag: " + newTime );
+		LocalTime newTime = LocalTime.of(12, 00);
+		ausgabe("Mittag: " + newTime );
 		
-		// LocalTime inOneHour = justNow.plusHours(1);
-		// ausgabe("In einer Stunde: " + inOneHour );
+		LocalTime inOneHour = justNow.plusHours(1);
+		ausgabe("In einer Stunde: " + inOneHour );
 		
-		// ausgabe("---------- Extraktion --------------------");
+		ausgabe("---------- Extraktion --------------------");
 		
-		// int hour = justNow.getHour(); // hora
-		// ausgabe("H: " + hour );
+		int hour = justNow.getHour(); // hora
+		ausgabe("H: " + hour );
 		
-		// int minute = justNow.getMinute();
-		// ausgabe("MIN: " + minute );
+		int minute = justNow.getMinute();
+		ausgabe("MIN: " + minute );
 		
-		// ausgabe("---------- DateTime --------------------");
+		ausgabe("---------- DateTime --------------------");
 		
-		// LocalDateTime timeStamp = LocalDateTime.now();
-		// ausgabe("timeStamp: " + timeStamp );
+		LocalDateTime timeStamp = LocalDateTime.now();
+		ausgabe("timeStamp: " + timeStamp );
 		
-		// System.out.println("---------- Kalenderwoche --------------------");
+		System.out.println("---------- Kalenderwoche --------------------");
 		
-        // Calendar cal = Calendar.getInstance();
-        // ausgabe("Kalenderwoche: " + cal.get(Calendar.WEEK_OF_YEAR)); 
+        Calendar cal = Calendar.getInstance();
+        ausgabe("Kalenderwoche: " + cal.get(Calendar.WEEK_OF_YEAR)); 
 
 	}
 
